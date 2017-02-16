@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LastApplication</string>
+    <string name="facebook_app_id">658233884287241</string>
+    <string name="fb_login_protocol_scheme">658233884287241</string>
 </resources>
