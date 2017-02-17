@@ -16,6 +16,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
+        NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        Notification notification = new Notification.Builder(getApplicationContext())
+                .setContentTitle("Main Activity")
+                .setContentText(" Blah Blah")
+                .setSmallIcon(R.drawable.ic_stat_name)
+                .build();
 
+        notification.flags |= Notification.FLAG_AUTO_CANCEL;
+        nm.notify(0, notification);
     }
 }
